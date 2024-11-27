@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*
+.roboto-mono-<uniquifier> {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+body{
+	margin: 0;
+	font-family: "Roboto Mono", monospace;
+	overflow: hidden;
+	background-color: #141414;
+	color: white;
+}
+header{
+	width: 100%;
+	height: 60px;
+	background-color: alicewhite;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+.title{
+	font-size: 30px;
+}
+.main{
+	display: flex;
+	justify-content: center;
+}
+.translate_from, .translate_to{
+	width: 430px;
+	height: 500px;
+	background-color: #636363;
+	border-radius: 20px;
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.select_lang_in, .select_lang_out{
+	width: 90%;
+	height: 30px;
+	color: white;
+	border-radius: 10px;
+	margin: 10px;
+	border: none;
+	background: #636363;
+	font-size: 1em;
+}
+.separator{
+	width: 95%;
+	border: 0.25px solid white;
+	margin: 0 0 10px 0;
+}
+.input_text, .output_text{
+	width: 90%;
+	height: 78%;
+	border-radius: 20px;
+	border: none;
+	background: transparent;
+	padding: 10px;
+	color: white;
+	font-size: 0.9em;
+	resize: none;
+}
+.input_text::placeholder, .output_text::placeholder{
+	color: rgb(166, 166, 166);
+}
+
+.copy_text{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+	cursor: pointer;
+}
+
+
+/* responsive */
+@media (max-width: 920px){
+	.translate_from, .translate_to{
+		width: 330px;
+		height: 400px;
+	}
+}
+@media (max-width: 720px){
+	.main{
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+	}
+	body{
+		overflow-y: scroll;
+	}
+}
+@media (max-width: 350px){
+	.title{
+		font-size: 20px;
+	}
+	.translate_from, .translate_to{
+		width: 270px;
+		height: 340px;
+	}
+}
